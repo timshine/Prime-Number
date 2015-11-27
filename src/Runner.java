@@ -15,8 +15,7 @@ public class Runner {
 		int MAX = input.nextInt(); // User input upper number to be checked for primality
 		boolean primes[];
 		primes = new boolean[MAX];
-		System.out.println("\nComputing Prime Numbers Between 1 and " + MAX
-				+ "\n");
+		System.out.println("\nComputing Prime Numbers Between 1 and " + MAX + "\n");
 		computePrimes(primes);
 		displayPrimes(primes);
 
