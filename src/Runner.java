@@ -12,10 +12,10 @@ public class Runner {
 	public static void main(String args[]) {
 		System.out.println("Enter upper limit: ");
 		Scanner input = new Scanner(System.in);
-		int MAX = input.nextInt(); // User input upper number to be checked for primality
+		int MAX = input.nextInt() + 1; // User input upper number to be checked for primality
 		boolean primes[];
 		primes = new boolean[MAX];
-		System.out.println("\nComputing Prime Numbers Between 1 and " + MAX + "\n");
+		System.out.println("\nComputing Prime Numbers Between 1 and " + (MAX-1) + "\n");
 		computePrimes(primes);
 		displayPrimes(primes);
 
